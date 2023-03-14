@@ -1,0 +1,219 @@
+/* Global  ====================================== */
+:root {
+    --color1: #000839;
+    --color2: #efefef;
+    --color3: #1d0adb;
+    --color4: #00a8cc;
+    --color5: #ffd31d;
+
+    --font1: 'Averia Serif Libre', cursive;
+    --font2: 'Source Serif Pro', serif;
+    --font3: 'Quattrocento Sans', sans-serif;
+    --font4: 'Dancing Script', cursive;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: sans-serif;
+}
+
+
+* {
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    background-color: var(--color4);
+    padding: 5px 5%;
+    color: var(--color1)
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* Header & Nav ====================================== */
+header {
+    width: 100vw;
+    background-color: var(--color1);
+    color: var(--color2);
+    position: sticky;
+    top: 0;
+    text-align: center;
+    z-index: 5;
+}
+
+nav {
+    margin: 10px auto;
+    width: 100%;
+}
+
+nav li {
+    display: inline-flex;    
+}
+
+nav a {
+    color: var(--color2);
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: var(--color5)
+}
+
+h1 {
+    color: var(--color4);
+}
+
+.subheading {
+    font-family: var(--font4), cursive;
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--color5);
+    background-color: var(--color3);
+    width: fit-content;
+    margin: 40px auto 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Color Palette ====================================== */
+
+h3 {
+    font-size: 1rem;
+    margin: 5px auto;
+    text-align: center;
+}
+
+h4 {
+    font-size: .75rem;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.color-palette {
+    height: 150px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+#color1 {
+    background-color: var(--color1);
+    color: var(--color2);
+}
+
+#color2 {
+    background-color: var(--color2);
+    color: var(--color1)
+}
+
+#color3 {
+    background-color: var(--color3);
+    color: var(--color2);
+}
+
+#color4 {
+    background-color: var(--color4);
+}
+
+#color5 {
+    background-color: var(--color5);
+    color: var(--color1
+    )
+}
+
+.color-child {
+    width: 100px;
+}
+/* Site Fonts ====================================== */
+
+.font-container {
+    overflow-y: hidden;
+}
+
+.font-container {
+    width: 75%;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.font-styles {
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+h5 {
+    font-size: 1.25rem;
+    margin: 0;
+    border-bottom: 1px solid;
+    overflow-y: hidden;
+}
+
+h6 {
+    font-size: 1rem;
+    margin: 0 auto;
+    flex-basis: 30%;
+    overflow-y: hidden;
+}
+
+.sample-text {
+    margin: 5px auto;
+    flex-basis: 70%;
+    overflow-y: hidden;
+}
+
+.sample-text::after {
+    content: "Sphinx of black quartz, judge my vow.";
+}
+
+.font1 {
+    font-family: var(--font1);
+    font-weight: 300;
+}
+
+.font2 {
+    font-family: var(--font2);
+    font-weight: 400;
+}
+
+.font3 {
+    font-family: var(--font3);
+}
+
+.font4 {
+    font-family: var(--font4);
+}
+
+/* Responsive Design ===================== */
+
+@media only screen and (max-width: 600px) {
+    * {
+        border: 1px solid;
+    }
+
+    .color-child h3, .color-child h4{
+        text-align: left;
+        margin: 0;
+    }
+
+    h3 {
+        transform: translateX(10%) translateY(250%) rotate(90deg);
+    }
+
+    h4 {
+        font-weight: lighter;
+        transform: translateX(-10%) translateY(250%) rotate(90deg);
+    }
+
+}
