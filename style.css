@@ -1,9 +1,11 @@
 /* Global  ====================================== */
+
+
 :root {
     --color1: #000839;
     --color2: #efefef;
-    --color3: #1d0adb;
-    --color4: #00a8cc;
+    --color3: hsl(216, 65%, 50%);
+    --color4: #3990ed;
     --color5: #ffd31d;
 
     --font1: 'Averia Serif Libre', cursive;
@@ -146,8 +148,15 @@ h4 {
 }
 /* Site Fonts ====================================== */
 
+.fonts {
+    background-color: var(--color2);
+    border-radius: 10px;
+    padding: 20px;
+}
+
 .font-container {
     overflow-y: hidden;
+    gap: 20px;
 }
 
 .font-container {
@@ -160,7 +169,6 @@ h4 {
     justify-content: flex-start;
     align-items: baseline;
     flex-wrap: wrap;
-    margin-bottom: 40px;
 }
 
 h5 {
